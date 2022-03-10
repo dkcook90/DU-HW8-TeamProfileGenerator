@@ -1,6 +1,6 @@
 const Engineer = require("../lib/Engineer");
 
-describe("THIS IS TEST FOR ENGINEER CLASS ", ()=> {
+describe("Testing engineer class", ()=> {
     it("should have a github property when instantiated with the github parameter", ()=> {
         const name = "Molly";
         const id = 10;

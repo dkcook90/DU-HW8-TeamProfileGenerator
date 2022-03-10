@@ -1,7 +1,7 @@
 
 const Employee = require("../lib/Employee");
 
-describe("TEST FOR EMPLOYEE CLASS", ()=> {
+describe("Testing employee class", ()=> {
     it("Should instantiate and create a employee object", ()=> {
         const emp = new Employee();
         expect(typeof emp).toBe("object")

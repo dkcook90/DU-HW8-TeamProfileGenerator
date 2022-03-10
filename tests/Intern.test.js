@@ -1,6 +1,6 @@
 const Intern = require("../lib/Intern");
 
-describe("THIS IS TEST FOR INTERN CLASS ", ()=> {
+describe("Testing intern class", ()=> {
     it("should have a school property when instantiated with the school parameter", ()=> {
         const name = "Molly";
         const id = 10;

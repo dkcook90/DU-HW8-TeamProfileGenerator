@@ -88,8 +88,8 @@ function addEmployee(){
 
 function createHTML(){
     //access the global employees array and create the dynamic HTML!!!
-    console.log("CREATING HTML!!!!!");
-    console.log("ALL YOUR EMPLOYEES ---- ", employees);
+    console.log("Writing HTML now...");
+    console.log("You have entered ---", employees);
 
     const html = `
     <!DOCTYPE html>

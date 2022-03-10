@@ -1,6 +1,6 @@
 const Manager = require("../lib/Manager");
 
-describe("THIS IS TEST FOR Manager CLASS ", ()=> {
+describe("Testing the manager class ", ()=> {
     it("should have a officeNumber property when instantiated with the officeNumber parameter", ()=> {
         const name = "Molly";
         const id = 10;
