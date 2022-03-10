@@ -106,14 +106,16 @@ function createHTML(){
         padding: 0;
     }
     h1 {
-        height: 120px;
-        padding-top: 80px;
-        background: coral;
+        height: 85px;
+        padding-top: 46px;
+        background: #1c0968;
         text-align: center;
         color: white;
     }
     .container {
-        padding: 8em 16em;
+        padding: 3em 9em;
+        display: flex;
+        justify-content: space-evenly;
 
     }
     .card {
@@ -124,26 +126,29 @@ function createHTML(){
     }
 
     .card .top {
-        background: blueviolet;
-        height: 100px;
+        background: #660d0d;
+        height: 71px;
         padding: 1em;
         border-radius: 1em 1em 0 0;
+        text-align: center;
     }
 
     .top :first-child {
-        color:white;
+        color: white;
         font-size: 30px;
+        margin: 5px;
     }
 
     .top :nth-child(2) {
         color: white;
         font-size: 25px;
+        font-style: italic;
     }
 
     .bottom {
-        padding: 3em;
+        padding: 1em;
         background: grey;
-        border-radius: 0 0 1em 1em;
+        border-radius: 0 0 0em 1em;
         height: fit-content;
     }
     .bottom ul {
