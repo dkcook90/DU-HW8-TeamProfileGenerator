@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        height: 120px;
+        padding-top: 80px;
+        background: coral;
+        text-align: center;
+        color: white;
+    }
+    .container {
+        padding: 8em 16em;
+
+    }
+    .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width: 250px;
+        height: fit-content;
+        border-radius: 1em;
+    }
+
+    .card .top {
+        background: blueviolet;
+        height: 100px;
+        padding: 1em;
+        border-radius: 1em 1em 0 0;
+    }
+
+    .top :first-child {
+        color:white;
+        font-size: 30px;
+    }
+
+    .top :nth-child(2) {
+        color: white;
+        font-size: 25px;
+    }
+
+    .bottom {
+        padding: 3em;
+        background: grey;
+        border-radius: 0 0 1em 1em;
+        height: fit-content;
+    }
+    .bottom ul {
+        list-style: none;
+        text-align: center;
+    }
+    .bottom ul li {
+        width: 100%;
+        background: white;
+        border: 1px solid darkgreen;
+        padding: 10px 0px;
+    }
+</style>
+<body>
+    <h1>EMPLOYEE MANAGER</h1>
+    <div class="container">
+        <div class="card">
+            <div class="top">
+                <div>Jared</div>
+                <div>Manager</div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>ID: 1</li>
+                    <li>Email: email</li>
+                    <li>Office Number: 21</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
