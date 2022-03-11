@@ -4,6 +4,15 @@
 
   The Team Profile Generator is a command line application that runs the user through a series of prompts, asking information about the employees on the team. After all of the questions are answered the user can then "create the roster" and is then presented with an HTML file containing all of the information for thier team.
 
+  ## Video Demonstration
+
+  https://drive.google.com/file/d/1pI0Fu-3DqQwMDacNFQgkBmc97JpbbQCR/view
+
+  ### Here is the output.html from the demo video
+
+  [output html](./dist/output.html)
+
+  ----------------------------------------------------------------------------------
   ## Table of Contents
   
 [Installation](#installation-instructions)
@@ -40,6 +49,10 @@ https://choosealicense.com/licenses/mit/
   ## Testing Instructions
 
   To test the Team Profile Generator, run 'npm test' in the command line. You must have the jest dependencies installed to run the tests.
+
+
+  ![application test gif](/assets/Untitled_%20Mar%2010%2C%202022%2010_44%20PM.gif)
+
 
   ## Questions
 
