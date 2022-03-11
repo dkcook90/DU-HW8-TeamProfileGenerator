@@ -1,6 +1,5 @@
-
 const Employee = require("../lib/Employee");
-
+// our main test that tests to make sure all employee info that is gathered matches what is being input by the user
 describe("Testing employee class", ()=> {
     it("Should instantiate and create a employee object", ()=> {
         const emp = new Employee();
@@ -28,8 +27,6 @@ describe("Testing employee class", ()=> {
         expect(emp.email).toEqual(email);
     });
 
-
-    //test methods
     it("Should return the name of the object when getName method is invoked", ()=> {
         const name = "Amanda";
         const id = 35;

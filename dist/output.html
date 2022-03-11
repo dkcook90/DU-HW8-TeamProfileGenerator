@@ -1,0 +1,123 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        height: 85px;
+        padding-top: 46px;
+        background: #1c0968;
+        text-align: center;
+        color: white;
+    }
+    .container {
+        padding: 3em 9em;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width: 250px;
+        height: fit-content;
+        border-radius: 1em;
+    }
+
+    .card .top {
+        background: #660d0d;
+        height: 71px;
+        padding: 1em;
+        border-radius: 1em 1em 0 0;
+        text-align: center;
+    }
+
+    .top :first-child {
+        color: white;
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .top :nth-child(2) {
+        color: white;
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    .bottom {
+        padding: 1em;
+        background: grey;
+        border-radius: 0 0 0em 1em;
+        height: fit-content;
+    }
+    .bottom ul {
+        list-style: none;
+        text-align: center;
+    }
+    .bottom ul li {
+        width: 100%;
+        background: white;
+        border: 1px solid darkgreen;
+        padding: 10px 0px;
+    }
+</style>
+<body>
+    <h1>EMPLOYEE MANAGER</h1>
+    <div class="container">
+        
+        <div class="card">
+            <div class="top">
+                <div>Don</div>
+                <div>Manager</div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>ID: 20347</li>
+                    <li>Email: <a href="mailto:don@yahoo.com">don@yahoo.com</a></li>
+                    <li>Office Number: 3</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="card">
+            <div class="top">
+                <div>Trav</div>
+                <div>Engineer</div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>ID: 2304</li>
+                    <li>Email: <a href="mailto:trav@gmail.com">trav@gmail.com</a></li>
+                    <li>Github Account: TravGit</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="card">
+            <div class="top">
+                <div>Ryne</div>
+                <div>Intern</div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>ID: 320490</li>
+                    <li>Email: <a href="mailto:ryne@du.edu">ryne@du.edu</a></li>
+                    <li>University Attended: Denver University</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+    

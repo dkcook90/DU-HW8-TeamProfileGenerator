@@ -1,8 +1,10 @@
+// importing all of our classes from the other js files in lib
 const {prompt} = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const fs = require("fs");
+// creating an array of questions for the first prompt, our manager prompt
 const managerPrompt = [
     {
         message: "What is the manager's name?",
@@ -25,7 +27,7 @@ const managerPrompt = [
         type: "input"
     }
 ];
-
+// array of questions for our employee classes after manager questions (engineer and intern), this is ran when the user chooses to add another employee
 const employeePrompt = [
     {
         message: "What is the role of the employee you want to add?",
@@ -52,11 +54,11 @@ const employeePrompt = [
         name: "extra",
     }
 ]
-
+// empty array that we will push all of the employees to after they are built using our main function addEmployee()
 const employees = []
 
 
-//main function
+//our main function that runs after setting up the manager, this will allow the user to either add another employee or creat the roster and run the HTML
 function addEmployee(){
     prompt({
         message: "What do you want to do?",
@@ -66,6 +68,7 @@ function addEmployee(){
     }).then(data => {
         console.log("YOUR CHOICE --- ", data.choice);
         if(data.choice === "Add an employee"){
+            // if the user chooses to add another employee, then the employeePrompt is run from line 31
             prompt(employeePrompt)
             .then(data => {
                 console.log("answers for employee --- ", data);
@@ -80,14 +83,14 @@ function addEmployee(){
                 console.log(`${data.role} added to team!`);
                 setTimeout(addEmployee, 1500);
             })
+        // if the user chooses to create roser, then createHTML() is ran, this will create the main page for our employees
         }else{
             createHTML()
         }
     })
 }
-
+// the main funtion that creates the html file that holds our roster
 function createHTML(){
-    //access the global employees array and create the dynamic HTML!!!
     console.log("Writing HTML now...");
     console.log("You have entered ---", employees);
 
@@ -171,23 +174,20 @@ function createHTML(){
 </html>
     `
 
-    //fs create the html file after html string is created
+    //after the html is created, this will write it to the dist folder
     fs.writeFileSync("./dist/output.html", html);
-    console.log("HTML successfuly created, it is in the /dist directory.")
-    //additional code 
+    console.log("HTML successfuly created, it is in the /dist directory.") 
 }
 
-
+// our main function that starts the manager prompts for the user, then creates the manager object and pushed that object to the empty employees array
 function main(){
-    //step 1 create manager first
     prompt(managerPrompt).then(data => {
         console.log(data);
 
-        //create new manager using information from inquirer
         const manager = new Manager(data.managerName, data.id, data.email, data.officeNumber);
         employees.push(manager);
 
-        //manager created, now ask which type of employee to add
+        // after the manager is created, this fuction is called that will ask the user to add more employees or create the roster and write the html
         addEmployee();
     })
 }
